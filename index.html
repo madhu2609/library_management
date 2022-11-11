@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Library</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="library.css">
+</head>
+
+<body>
+  <div class="top">Library
+
+    <header>
+
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <a href="#" class="logo"><span>L</span>ibrary</a>
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#contact">Collections</a>
+        <a href="#packages">Notice Board</a>
+        <a href="#services">Login</a>
+
+      </nav>
+
+
+
+    </header>
+
+    <section class="home" id="home">
+
+      <div class="content">
+        <br>
+        <h3>A Library Is a Hospital for the Mind</h3>
+        <p> -place where people lower their voice and raise their minds</p>
+
+      </div>
+      <div class="video-container">
+        <video src="back.mp4" id="video-slider" loop autoplay muted></video>
+
+      </div>
+    </section>
+
+
+
+    <div>
+      <div></div>
+    </div>
+    <div class="wrapper">
+      <div id="search-container">
+        <input type="search" id="search-input" placeholder="Search for a book , Author" />
+        <label for="language">Filter By:</label>
+        <select name="" id="language">
+          <option value="Title">Title</option>
+          <option value="Author">Authors</option>
+          <option value="Date">Publish Date</option>
+          <option value="Journal" selected>Journal</option>
+        </select>
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('History')">
+          History
+        </button>
+        <button class="button-value" onclick="filterProduct('Technology')">
+          Technology
+        </button>
+        <button class="button-value" onclick="filterProduct('Environmental')">
+          Environmental
+        </button>
+        <button class="button-value" onclick="filterProduct('Love')">
+          Love
+        </button>
+      </div>
+      <div id="products"></div>
+      <div class="pagination_section">
+        
+        <a href="#"  class="active">1</a>
+        <a href="#" >2</a>
+        <a href="#" >3</a>
+        <a href="#" >4</a>
+        <a href="#">5</a>
+        <a href="#">Next >></a>
+    </div>
+    </div>
+  </div>
+  <!-- Script -->
+  <!-- <script src="script.js"></script> -->
+  <script src="library.js"></script>
+</body>
+
+</html>
